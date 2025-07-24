@@ -1,0 +1,797 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Universal Reset */
+/* @layer base {
+    body {
+    }
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F8FF;
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    height: auto;
+}
+
+main {
+    width: 1440px;
+    height: auto;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: var(--white);
+    /* position: fixed; */
+    width: 1440px;
+    height: auto;
+    top: 0;
+    z-index: 1000;
+}
+
+.footer {
+    background-color: rgba(10, 8, 38, 1);
+    /* Dark background */
+    color: #fff;
+    text-align: center;
+    position: relative;
+    height: 348px;
+    padding: 50px 589px 50px 598px;
+}
+
+/* agtext font link */
+@font-face {
+    font-family: 'Ag Text';
+    src: url('path-to-your-font/AgText.woff2') format('woff2'),
+        url('path-to-your-font/AgText.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* shared style */
+:root {}
+
+/* header font */
+.AgTMB {
+    font-family: 'Ag Text', sans-serif;
+    /* Assuming 'Ag Text' is the font */
+    font-weight: bold;
+    /* Set to Bold */
+    font-size: medium;
+    /* You can define the exact size, or use a more precise value */
+    color: #252432;
+    /* The color value you provided */
+    text-align: left;
+    /* Align the text to the left (default alignment) */
+}
+
+.AgTMR {
+    font-family: 'Ag Text', sans-serif;
+    /* 'Ag Text' font */
+    font-weight: 500;
+    /* Medium weight */
+    font-style: normal;
+    /* Regular style */
+    color: #8987A1;
+    /* Black color */
+    text-align: left;
+    /* Left-aligned text */
+}
+
+.NotoSerifBold {
+    font-family: 'Noto Serif', serif;
+    /* Noto Serif font */
+    font-weight: bold;
+    /* Bold weight */
+    line-height: 1.2;
+    /* Auto line height can be set to a value like 1.2 for readability */
+    letter-spacing: 0%;
+    /* 0% letter spacing */
+    text-align: center;
+    /* Center-aligned text */
+}
+
+.InterRegular {
+    font-family: 'Inter', sans-serif;
+    /* Inter font */
+    font-weight: normal;
+    /* Regular weight */
+    line-height: 1.5;
+    /* Auto line height can be set to a value like 1.5 for readability */
+    letter-spacing: 0%;
+    /* 0% letter spacing */
+    text-align: left;
+    /* Left-aligned text */
+}
+
+/* sectionCard > card font */
+.InterMedium {
+    font-family: 'Inter', sans-serif;
+    /* Inter font */
+    font-weight: 500;
+    /* Medium weight corresponds to font-weight: 500 */
+    font-size: 22px;
+    /* Font size of 22px */
+    line-height: 1.5;
+    /* Line height of 150% (1.5 times the font size) */
+    letter-spacing: 0%;
+    /* 0% letter spacing */
+    text-align: center;
+    /* Center-aligned text */
+}
+
+.InterBold {
+    font-family: 'Inter', sans-serif;
+    /* Inter font */
+    font-weight: bold;
+    /* Bold weight */
+    font-size: 22px;
+    /* Font size of 22px */
+    line-height: 1.5;
+    /* Line height of 150% (1.5 times the font size) */
+    letter-spacing: 0%;
+    /* 0% letter spacing */
+    text-align: center;
+    /* Center-aligned text */
+}
+
+.InterSemiBold {
+    font-family: 'Inter', sans-serif;
+    /* Inter font */
+    font-weight: 600;
+    /* Semi Bold weight corresponds to font-weight: 600 */
+    font-size: 16px;
+    /* Font size of 16px */
+    line-height: 1.5;
+    /* Auto line height (using a ratio like 1.5 for readability) */
+    letter-spacing: 0%;
+    /* 0% letter spacing */
+    text-align: left;
+    /* Left-aligned text */
+}
+
+/* main style */
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px 120px 150px;
+}
+
+.cart-icon {
+    font-size: 20px;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+
+/* .nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 48px;
+} */
+
+/* .nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s;
+} */
+
+/* .nav ul li a:hover {
+    color: #ff7f00;
+} */
+
+/* .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px 120px 150px;
+} */
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    margin-bottom: 13px;
+}
+
+.hero-text p {
+    font-size: 22px;
+    color: #555;
+}
+
+.hero-image img {
+    width: 570px;
+    height: 355px;
+
+    max-width: 100%;
+}
+
+/* our plant section  */
+.product-section {
+    padding: 0 150px 210.13px 150px;
+    max-width: 1440px;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+/* Section Heading */
+.section-header h2 {
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+.section-header .highlight {
+    color: #E95A08;
+}
+
+.section-header .bold {
+    color: #000000;
+}
+
+.section-header p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Product Title */
+.product-card h3 {
+    margin: 10px 0 5px;
+    color: #111111;
+}
+
+/* Product Price */
+.product-card .price {
+    margin-bottom: 10px;
+    color: #111111;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background-color: #E95A08;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #cf4f05;
+}
+
+/* Flower Section */
+.flower-section {
+    padding: 0 150px 133.88px 150px;
+    max-width: 1440px;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.flower-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.flower-image img {
+    width: 100%;
+    max-width: 540px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Right Content Panel */
+.flower-content {
+    position: relative;
+    flex: 1;
+    min-width: 280px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+/* Animation definition — can go at the top or bottom of your CSS */
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.flower-content .badge {
+    animation: rotate360 5s linear infinite;
+    position: absolute;
+    top: -130px;
+    left: -253px;
+    width: 286px;
+    height: auto;
+    z-index: 10;
+}
+
+.flower-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: left;
+}
+
+.flower-content ul {
+    list-style: disc inside;
+    color: #444;
+    font-size: 22px;
+    padding-left: 0;
+}
+
+.flower-content ul li {
+    margin-bottom: 20px;
+}
+
+/* deals-section */
+/* Section Container */
+.deals-section {
+    padding: 0 150px 120px 150px;
+    text-align: center;
+    max-width: 1440px;
+}
+
+.deals-header h2 {
+    font-size: 50px;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.deals-header .highlight {
+    color: #E95A08;
+    /* Orange color */
+}
+
+.deals-header p {
+    font-size: 22px;
+    color: #555;
+    max-width: 888px;
+    margin: 0 auto 120px;
+}
+
+/* Deals Grid */
+.deals-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+    max-width: 100%;
+}
+
+/* Left Side - Vertical Stack */
+.deal-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 367px;
+}
+
+/* Deal Cards */
+.deal-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    text-align: center;
+    /* Optional: center text */
+    padding: 20px;
+    color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Overlay darkness using ::before */
+.deal-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* shorthand for top: 0; right: 0; bottom: 0; left: 0; */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* adjust 0.4 → darker overlay */
+    z-index: 0;
+}
+
+/* Text stays above the overlay */
+.deal-text {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    /* Forces text to stay white */
+}
+
+/* Card Sizes */
+.deal-card.small {
+    width: 367px;
+    height: 201px;
+    /* 423=201+201 */
+}
+
+.deal-card.large {
+    width: 744px;
+    height: 423px;
+}
+
+/* Text on Cards */
+.deal-text h3 {
+    margin: 0;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.deal-text h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.deal-text .smallCard {
+    font-size: 15px;
+    margin-top: 4px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.deal-text .largeCard {
+    font-size: 28px;
+    margin-top: 4px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+
+/* Section with background */
+.newsletter-section {
+    background-image: url('assets/news-letter-bg.png');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 199px 305px 193px 305px;
+    text-align: center;
+    color: white;
+}
+
+/* Dark overlay to improve readability */
+.newsletter-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* adjust darkness */
+    z-index: 0;
+}
+
+/* Content wrapper */
+.newsletter-overlay {
+    position: relative;
+    z-index: 1;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+/* Heading */
+.newsletter-title {
+    font-size: 50px;
+    margin-bottom: 23px;
+}
+
+/* Form styles */
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+    min-width: 644px;
+}
+
+.newsletter-form button {
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #cf4f05;
+}
+
+/* fiiter  section */
+.site-footer {
+    background-color: #F5F8FF;
+    padding: 50px 160px 50px 160px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1120px;
+    margin: 0 auto;
+    gap: auto;
+}
+
+.footer-brand {
+    max-width: 359px;
+}
+
+.footer-logo {
+    width: 135px;
+    margin-bottom: 16px;
+}
+
+.footer-brand p {
+    color: #555;
+    font-size: 22px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 32px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #E95A08;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer-socials img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials a:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* Media query for iPhone 14 and 15 Pro */
+@media (max-width: 576px) {
+    .site-footer {
+        width: 1440px;
+        padding: 50px 150px 50px 150px;
+
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+
+
+    body {
+        width: 393px;
+    }
+
+    .product-section {
+        display: none;
+    }
+
+    .displayNone,
+    .flower-content .badge
+      {
+        display: none;
+    }
+    /* .displayNone,
+    .flower-content .badge,
+    .flower-section,
+    .deals-section,
+    .newsletter-section {
+        display: none;
+    } */
+
+    .hero {
+        width: 100%;
+        /* flex-direction: column-reverse;
+        text-align: center; */
+        /* padding-left: 0;
+        padding-right: 0; */
+    }
+
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Section padding adjusted for small screens */
+    .product-section {
+        padding: 0 150px 41.5px 150px;
+    }
+
+    /* Stack products in a single column */
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(171px, 1fr));
+
+        gap: 20px;
+    }
+
+    /* Slightly tighter padding for small product cards */
+    .product-card {
+        padding: 12px;
+        padding: 12px;
+        min-height: 340px;
+        /* ← You can adjust this value */
+    }
+
+    .product-card h3,
+    .product-card .price {
+        font-size: 16px;
+    }
+
+    .product-card img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    /* Smaller font and tighter button padding */
+    .add-to-cart {
+        font-size: 12px;
+        padding: 8px 12px;
+
+    }
+
+    /* flower-section responibe */
+    .flower-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .flower-image {
+        width: 100%;
+    }
+
+    .flower-image img {
+        max-width: 100%;
+    }
+
+    .deals-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .deal-left {
+        width: 100%;
+    }
+
+    .deal-card.small,
+    .deal-card.large {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .deal-card.small {
+        height: 500px;
+    }
+
+    .deal-card.large {
+        height: 500px;
+    }
+
+    /* Text on Cards */
+    .deal-text h3 {
+        font-size: 50px;
+    }
+
+    .deal-text h4 {
+        font-size: 50px;
+    }
+
+    .deal-text .smallCard {
+        font-size: 28px;
+    }
+
+    .deal-text .largeCard {
+        font-size: 28px;
+    }
+
+    /* newsletter-section */
+    .newsletter-section {
+        padding: 110.5px 36px 64.5px 36px;
+        max-height: 100%;
+    }
+
+
+
+}
