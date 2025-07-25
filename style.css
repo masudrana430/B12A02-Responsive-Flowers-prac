@@ -205,10 +205,10 @@ header {
     margin-bottom: 13px;
 }
 
-.hero-text p {
+/* .hero-text p {
     font-size: 22px;
     color: #555;
-}
+} */
 
 .hero-image img {
     width: 570px;
@@ -227,7 +227,6 @@ header {
 
 /* Section Heading */
 .section-header h2 {
-    font-size: 50px;
     margin-bottom: 16px;
 }
 
@@ -240,8 +239,8 @@ header {
 }
 
 .section-header p {
-    max-width: 600px;
-    margin: 0 auto 40px;
+    max-width: 888px;
+    margin: 0 126px 49px 126px;
 }
 
 /* Product Grid */
@@ -359,7 +358,6 @@ header {
 }
 
 .flower-content h2 {
-    font-size: 50px;
     margin-bottom: 20px;
     color: #000000;
     text-align: left;
@@ -368,7 +366,6 @@ header {
 .flower-content ul {
     list-style: disc inside;
     color: #444;
-    font-size: 22px;
     padding-left: 0;
 }
 
@@ -385,7 +382,6 @@ header {
 }
 
 .deals-header h2 {
-    font-size: 50px;
     margin-bottom: 16px;
     color: #000000;
 }
@@ -396,10 +392,10 @@ header {
 }
 
 .deals-header p {
-    font-size: 22px;
     color: #555;
     max-width: 888px;
     margin: 0 auto 120px;
+    text-align: center;
 }
 
 /* Deals Grid */
@@ -530,7 +526,6 @@ header {
 
 /* Heading */
 .newsletter-title {
-    font-size: 50px;
     margin-bottom: 23px;
 }
 
@@ -593,7 +588,6 @@ header {
 
 .footer-brand p {
     color: #555;
-    font-size: 22px;
 }
 
 .footer-links ul {
@@ -647,7 +641,27 @@ header {
     }
 
     .footer-links a {
-        font-size: 16px;
+        font-size: 35px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-logo {
+        width: 180px;
+        height: 109px;
+    }
+
+    .footer-socials {
+        width: 70%;
+        height: 71px;
+        gap: 165px;
+    }
+
+    .footer-socials img {
+        width: 70px;
+        height: 70px;
     }
 
 
@@ -655,15 +669,16 @@ header {
         width: 393px;
     }
 
-    .product-section {
+    /* .product-section {
+        display: none;
+    } */
+
+
+    .displayNone,
+    .flower-content .badge {
         display: none;
     }
 
-    .displayNone,
-    .flower-content .badge
-      {
-        display: none;
-    }
     /* .displayNone,
     .flower-content .badge,
     .flower-section,
@@ -714,9 +729,10 @@ header {
         /* ← You can adjust this value */
     }
 
+
     .product-card h3,
     .product-card .price {
-        font-size: 16px;
+        font-size: 40px;
     }
 
     .product-card img {
@@ -727,8 +743,9 @@ header {
 
     /* Smaller font and tighter button padding */
     .add-to-cart {
-        font-size: 12px;
+        font-size: 40px;
         padding: 8px 12px;
+        height: 80px;
 
     }
 

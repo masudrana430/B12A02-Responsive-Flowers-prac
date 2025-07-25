@@ -31,7 +31,7 @@
                     <li class="displayNone"><a href="#"
                             class="AgTMR no-underline transition-colors duration-300 hover:text-[#ff7f00]">About Us</a>
                     </li>
-                    <li><i class="fas fa-shopping-cart"></i><a href="#"
+                    <li class="cartIconRep"><i class="fas fa-shopping-cart"></i><a href="#"
                             class="AgTMR text-black no-underlin hover:text-[#ff7f00]e transition-colors duration-300 hover:text-[#ff7f00]">Cart
                             ($56)</a>
                     </li>
@@ -43,13 +43,14 @@
             class="hero flex flex-col-reverse sm:flex-row justify-between items-center px-0 sm:px-[150px] pb-[120px] text-center sm:text-left">
             <!-- <div class="hero-text w-full sm:w-1/2 mb-8 sm:mb-0 text-left"> -->
             <div class="hero-text w-full sm:w-1/2 mb-8 mt-[28px] sm:mb-0 text-left ">
-                <h1 class="NotoSerifBold text-[65px] font-black text-left">
+                <h1 class="NotoSerifBold text-[80px] md:text-[65px] lg:text-[65px] font-black text-left">
+                <!-- text-[80px] for mobile, md:text-[65px] for tav, lg:text-[65px] for pc -->
                     <span>ALWAYS</span> <span style="color: #E95A08;">FRESH</span>
                     <br>
                     <span style="color: #E95A08;">FLOWERS</span>
                 </h1>
                 <div style="margin-bottom: 0;">
-                    <p class="InterRegular  text-[22px] font-black text-black/50 text-left">Indulge your senses with the
+                    <p class="InterRegular  text-[45px] md:text-[22px] lg:text-[22px] font-black text-black/50 text-left">Indulge your senses with the
                         beauty and
                         fragrance of our fresh flower shop. From classic roses to
                         exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
@@ -65,8 +66,8 @@
         <!-- Our Plants Section -->
         <section class="product-section">
             <div class="section-header">
-                <h2 class="NotoSerifBold"><span class="highlight">Our</span> <span class="bold">Plants</span></h2>
-                <p class="font-black text-black/50 text-[22px]">
+                <h2 class="NotoSerifBold text-[65px] md:text-[50px] lg:text-[50px] "><span class="highlight">Our</span> <span class="bold">Plants</span></h2>
+                <p class="font-black text-black/50  text-[45px] md:text-[22px] lg:text-[22px]">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop.
                     From classic roses to exotic blooms, we offer a wide variety of fresh.
                 </p>
@@ -134,8 +135,8 @@
                 <!-- Right: Content -->
                 <div class="flower-content">
                     <img src="assets/trusted-badge.png" alt="Trusted Seller Badge" class="badge">
-                    <h2 class="NotoSerifBold">Flower &amp; Plants Lover</h2>
-                    <ul class="InterRegular">
+                    <h2 class="NotoSerifBold text-[65px] md:text-[50px] lg:text-[50px]">Flower &amp; Plants Lover</h2>
+                    <ul class="InterRegular text-[45px] md:text-[22px] lg:text-[22px]">
                         <li>
                             Indulge your senses with the beauty and fragrance of our fresh flower shop.
                             From classic roses to exotic blooms, we offer a wide variety of fresh.
@@ -154,8 +155,8 @@
         </section>
         <section class="deals-section">
             <div class="deals-header">
-                <h2 class="NotoSerifBold"><span class="highlight">Latest</span> Deals</h2>
-                <p class="InterRegular">
+                <h2 class="NotoSerifBold text-[65px] md:text-[50px] lg:text-[50px]"><span class="highlight">Latest</span> Deals</h2>
+                <p class="InterRegular text-[45px] md:text-[22px] lg:text-[22px]">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop.
                     From classic roses to exotic blooms, we offer a wide variety of fresh.
                 </p>
@@ -167,13 +168,13 @@
                     <div class="deal-card small" style="background-image: url('assets/deal-bloom.png')">
                         <div class="deal-text">
                             <h4 class="NotoSerifBold px50">60% Off | Bloom Plant</h4>
-                            <p class="InterSemiBold smallCard ">Shop Now</p>
+                            <p class="InterSemiBold smallCard underline decoration-4 decoration-white underline-offset-4">Shop Now</p>
                         </div>
                     </div>
                     <div class="deal-card small" style="background-image: url('assets/deal-ana.png')">
                         <div class="deal-text">
                             <h4 class="NotoSerifBold px50">30% Off | Ana Plant</h4>
-                            <p class="InterSemiBold smallCard ">Shop Now</p>
+                            <p class="InterSemiBold smallCard underline decoration-4 decoration-white underline-offset-4">Shop Now</p>
                         </div>
                     </div>
                 </div>
@@ -182,14 +183,14 @@
                 <div class="deal-card large" style="background-image: url('assets/deal-zabo.png')">
                     <div class="deal-text">
                         <h3 class="NotoSerifBold px50">25% Off | Zabo Plant</h3>
-                        <p class="InterSemiBold largeCard">Shop Now</p>
+                        <p class="InterSemiBold largeCard underline decoration-4 decoration-white underline-offset-4">Shop Now</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="newsletter-section">
             <div class="newsletter-overlay">
-                <h2 class="newsletter-title NotoSerifBold">Join the colorful Bunch</h2>
+                <h2 class="newsletter-title NotoSerifBold text-[60px] md:text-[50px] lg:text-[50px]">Join the colorful Bunch</h2>
                 <form class="newsletter-form InterRegular">
                     <input type="email" placeholder="Write email" required />
                     <button type="submit" class="InterSemiBold">Subscribe</button>
@@ -202,11 +203,11 @@
             <!-- Left: Logo and description -->
             <div class="footer-brand">
                 <img src="assets/logo.png" alt="Fauget Logo" class="footer-logo" />
-                <p class="InterRegular">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+                <p class="InterRegular text-[40px] md:text-[22px] lg:text-[22px]">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
             </div>
 
             <!-- Middle: Links column 1 -->
-            <div class="footer-links">
+            <div class="footer-links ">
                 <ul>
                     <li><a href="#" class="AgTMR">Home</a></li>
                     <li><a href="#" class="AgTMR">About Us</a></li>
